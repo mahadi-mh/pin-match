@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khul Ja Sim...Sim</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <div class="header-container">
+        Khul Ja Sim...Sim
+    </div>
+    <div class="main-container">
+        <div class="pin-generation">
+            <input type="text" id="randomPinGenerateInput">
+            <button id="generateBtn">Generate</button>
+        </div>
+        <div class="pin-typing">
+            <input type="text" id="userPinInput">
+            <div class="all-button">
+                <button>7</button>
+                <button>8</button>
+                <button>9</button>
+                <button>4</button>
+                <button>5</button>
+                <button>6</button>
+                <button>1</button>
+                <button>2</button>
+                <button>3</button>
+                <button><</button>
+                <button>0</button>
+                <button>C</button>
+
+            </div>
+            <button id="pinSubmitBtn">Submit</button>
+            <p style="color:red;text-align: center;">3 Try Left</p>
+        </div>
+
+    </div>
+
+    <div class="rightWrongMessage" id="succesfulPicMessage">❌ Pin Didn't Match, Please try again</div>
+    <div class="rightWrongMessage" id="unSuccesfulPicMessage">✅ Pin Matched... Secret door is opening for you</div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
