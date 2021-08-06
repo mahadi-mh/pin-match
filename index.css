@@ -1,0 +1,165 @@
+body {
+    margin: 0;
+    background-color: #10101B;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* title  */
+
+.header-container {
+    font-size: 80px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+/* main container */
+
+@media (max-width: 700px) {
+    .main-container {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+        grid-gap: 25px;
+    }
+}
+
+@media (min-height: 350px) {
+    .main-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+        grid-gap: 25px;
+    }
+}
+
+
+/* pin generation field */
+
+.pin-generation {
+    width: 480px;
+    height: 480px;
+    background-color: #212529;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    border: 1px solid #212529;
+}
+
+
+/* input field  */
+
+#randomPinGenerateInput {
+    margin: 15px;
+    height: 35px;
+    width: auto;
+    background: #212529;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    border: 1px solid #788da1;
+}
+
+
+/* button to generate */
+
+#generateBtn {
+    font-size: 25px;
+    color: white;
+    width: 160px;
+    height: 150px;
+    border-radius: 50%;
+    border: 8px solid #39458C;
+    margin-top: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    background-color: cadetblue;
+}
+
+
+/* user pin giving field */
+
+.pin-typing {
+    width: 480px;
+    height: 480px;
+    background-color: #212529;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    border: 1px solid #212529;
+}
+
+
+/* input field for user */
+
+#userPinInput {
+    margin: 15px;
+    height: 40px;
+    width: auto;
+    background: #212529;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    border: 1px solid #788da1;
+}
+
+
+/* button handle */
+
+.all-button {
+    margin: 15px;
+    display: grid;
+    grid-template-columns: repeat(3, 70px);
+    grid-template-rows: repeat(4, 70px);
+    justify-content: center;
+    grid-gap: 7px;
+}
+
+.all-button button {
+    color: white;
+    background-color: #212529;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    border: 1px solid #212529;
+}
+
+
+/* btn modify */
+
+#pinSubmitBtn {
+    width: 150px;
+    height: 60px;
+    font-size: 15px;
+    color: rgb(242, 240, 250);
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    background-color: cadetblue;
+}
+
+
+/* messages field handle */
+
+.rightWrongMessage {
+    text-align: center;
+    width: 400px;
+    height: 35px;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    background-color: #212529;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    border: 1px solid #212529;
+    display: none;
+}
