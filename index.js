@@ -1,5 +1,6 @@
 let generateBtn = document.getElementById("generateBtn");
-let randomNum = Math.ceil(Math.random() * 100000);
+let randomNum;
+
 
 // Catch Messages
 
@@ -15,6 +16,8 @@ let countTry = document.getElementById("countTry");
 generateBtn.addEventListener("click", function() {
 
     let randomInput = document.getElementById("randomPinGenerateInput");
+    randomNum = Math.ceil(Math.random() * 100000);
+    // console.log(randomNum);
     randomInput.value = randomNum;
 })
 
