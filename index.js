@@ -16,8 +16,6 @@ generateBtn.addEventListener("click", function() {
 
     let randomInput = document.getElementById("randomPinGenerateInput");
     randomInput.value = randomNum;
-
-
 })
 
 
@@ -85,22 +83,25 @@ btnClearALl.addEventListener("click", function() {
     userPinInput.value = "";
 })
 
+let count = 1;
 let pinSubmitBtn = document.getElementById("pinSubmitBtn");
 pinSubmitBtn.addEventListener("click", function() {
     let storeValue = userPinInput.value;
-    let cnt;
-    for (cnt = 3; cnt > 0; cnt--) {
+    if(count < 3) {
         if (storeValue == randomNum) {
             successMes.style.display = "block";
             pinSubmitBtn.style.display = "none";
             unsuccessMes.style.display = "none";
             countTry.innerHTML = "";
         } else {
-            unsuccessMes.style.display = "block";
             userPinInput.value = "";
-            countTry.innerHTML = (cnt - 1) + "try left";
+            countTry.innerHTML = (3 - count) + "try left";
+            count++;
         }
-        console.log(cnt);
     }
-    pinSubmitBtn.style.display = "none";
+    else {
+        countTry.innerHTML = "No more attempt left";
+        unsuccessMes.style.display = "block";
+        pinSubmitBtn.style.display = "none";
+    }
 })
